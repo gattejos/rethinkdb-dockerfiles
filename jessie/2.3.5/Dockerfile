@@ -17,7 +17,7 @@ VOLUME ["/data"]
 
 WORKDIR /data
 
-CMD ["rethinkdb", "--bind", "all"]
+CMD ["rethinkdb", "--bind", "all", "--join", "172.17.0.2:29015"]
 
 #   process cluster webui
 EXPOSE 28015 29015 8080
